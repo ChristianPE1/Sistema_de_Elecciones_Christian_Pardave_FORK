@@ -1,7 +1,7 @@
 import * as mysql from "mysql";
 
 namespace Dominio.Resultados.vos {
-  class Class1 {
+  class vos {
     /**
      * Default constructor
      */
@@ -9,16 +9,13 @@ namespace Dominio.Resultados.vos {
       // ...
     }
 
-    /**
-     * Implement this method to get election results.
-     */
     public resultadosEleccion() {
       // Configuración de la conexión a la base de datos MySQL
       const connection = mysql.createConnection({
-        host: "localhost", // Cambiar por el host de tu base de datos
-        user: "usuario", // Cambiar por el usuario de tu base de datos
-        password: "contraseña", // Cambiar por la contraseña de tu base de datos
-        database: "nombre_base_de_datos", // Cambiar por el nombre de tu base de datos
+        host: "root", // Cambiar por el host de tu base de datos
+        user: "user", // Cambiar por el usuario de tu base de datos
+        password: "...", // Cambiar por la contraseña de tu base de datos
+        database: "SistemaElecciones", // Cambiar por el nombre de tu base de datos
       });
 
       // Realizar la conexión a la base de datos

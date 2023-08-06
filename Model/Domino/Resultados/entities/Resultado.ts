@@ -1,9 +1,10 @@
-namespace Dominio.Resultados.entities {
-  class Resultado {
+/*export namespace Dominio.Resultados.entities */
+export namespace Dominio {
+  export class Resultado {
     private idResultado: number;
     private idEleccion: number;
     private totalVotos: number;
-    private ganador: string;
+    private ganador: boolean;
 
     /**
      * Default constructor
@@ -12,7 +13,7 @@ namespace Dominio.Resultados.entities {
       idResultado: number,
       idEleccion: number,
       totalVotos: number,
-      ganador: string
+      ganador: boolean
     ) {
       this.idResultado = idResultado;
       this.idEleccion = idEleccion;
@@ -33,7 +34,7 @@ namespace Dominio.Resultados.entities {
       return this.totalVotos;
     }
 
-    public getGanador(): string {
+    public getGanador(): boolean {
       return this.ganador;
     }
 
@@ -50,7 +51,7 @@ namespace Dominio.Resultados.entities {
       this.totalVotos = totalVotos;
     }
 
-    public setGanador(ganador: string): void {
+    public setGanador(ganador: boolean): void {
       this.ganador = ganador;
     }
   }

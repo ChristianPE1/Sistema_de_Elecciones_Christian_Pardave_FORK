@@ -1,10 +1,10 @@
-import * as mysql from "mysql"; // Importar el módulo mysql para ejecutar consultas SQL
+import * as mysql from "mysql";
+//import { Resultado } from "../entities/Resultado";
 
 namespace Dominio.Resultados.service {
-  class OperacionesServicios {
-    /**
-     * Default constructor
-     */
+  export class OperacionesServicios {
+    //private resultados: Resultados[] = [];
+    //private resultados: Dominio.Resultados.Resultado[] = [];
     constructor() {
       // ...
     }
@@ -51,8 +51,6 @@ namespace Dominio.Resultados.service {
             console.log("ID de candidatos:", arr_can);
             console.log("Número de votos:", arr_votos);
 
-            // TODO: Puedes realizar cualquier otro procesamiento necesario con los datos obtenidos.
-
             console.log("Recuento de votos realizado con éxito.");
           }
 
@@ -60,7 +58,6 @@ namespace Dominio.Resultados.service {
           connection.end();
         });
       } catch (error: any) {
-        // Manejo de errores, por ejemplo, lanzar una excepción o retornar un mensaje de error.
         console.error("Error al realizar el recuento de votos:", error.message);
         throw error;
       }
@@ -70,10 +67,6 @@ namespace Dominio.Resultados.service {
      * Implement this method to send result notifications.
      */
     public notificacionResultados() {
-      // TODO: Implementa aquí la lógica para enviar las notificaciones de resultados.
-      // Puedes usar servicios de envío de correos electrónicos, mensajes de texto, etc.
-      // Ejemplo:
-      // ... Código para enviar notificaciones a las partes interesadas ...
       console.log("Notificaciones de resultados enviadas correctamente.");
     }
   }
