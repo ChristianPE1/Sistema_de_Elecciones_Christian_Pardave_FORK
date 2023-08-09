@@ -13,8 +13,9 @@ Repositorio Fork (Christiasn Pardavé Espinoza) En este fork se actulizan los av
 
 Estilos Implmentados
 
--MVC
--POO
+- MVC
+- POO
+
 Se ha instalado la herramienta Sonarlint para verificar que se esté desarrollando un Clean Code.
 
 //////////////
