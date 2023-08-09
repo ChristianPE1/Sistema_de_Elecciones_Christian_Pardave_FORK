@@ -11,10 +11,11 @@
 
 Repositorio Fork (Christiasn Pardavé Espinoza) En este fork se actulizan los avances del paquete Resultados.
 
-Estilos Implmentados
+##**Estilos Implmentados**
 
 - MVC
 - POO
+
 
 Se ha instalado la herramienta Sonarlint para verificar que se esté desarrollando un Clean Code.
 
